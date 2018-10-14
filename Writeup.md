@@ -3,13 +3,13 @@
 
 [image_0]: ./docs/misc/fcn.png
 
-[image_1]: ./docs/misc/1.png
+[image_1]: ./docs/misc/img_1.png
 
-[image_2]: ./docs/misc/2.png
+[image_2]: ./docs/misc/img_2.png
 
-[image_3]: ./docs/misc/3.png
+[image_3]: ./docs/misc/img_3.png
 
-[image_4]: ./docs/misc/4.png
+[image_4]: ./docs/misc/img_4.png
 
 
 ## Deep Learning project writeup
