@@ -2,15 +2,10 @@
 
 
 [image_0]: ./docs/misc/fcn.png
-
-[image_1]: ./docs/misc/img_1.PNG
-
-[image_2]: ./docs/misc/img_2.PNG
-
-[image_3]: ./docs/misc/img_3.PNG
-
-[image_4]: ./docs/misc/img_4.PNG
-
+[image_1]: ./docs/misc/1.png
+[image_2]: ./docs/misc/2.png
+[image_3]: ./docs/misc/3.png
+[image_4]: ./docs/misc/4.png
 
 ## Deep Learning project writeup
 This document is prepared as a report on the deep learning segmentation project.
@@ -60,6 +55,17 @@ def fcn_model(inputs, num_classes):
 
 ## Reason for layer choice 
 For this exercise in the encoder section the separable convolution layer is used instead of the traditional CNN layer for feature extraction in order to decease the number of parameters required to be learned. The 1x1 convolution layer is used to increase the number of feature map since its computation is less expensive in sense of computation. In decoder section instead of regular deconvolution layer(convolution transpose), bilinear upsampling is used again for reduction in computation. 
+
+## Encoder
+The convolution layer is used as a encoder since it can reduce the amount of information in the image while keeping the spatial information. The convolution layer can extract information such as edges and abstract information in the few first layers and as the depth of the network increase the network can extract more complicated information and shapes such as curves, squares and ect. 
+
+## 1x1 convolution
+Even-though the fully connected layer is a good choice for classification in this exercise it is not useful since the spacial information will be lost. In order to preserve the spacial information we use 1x1 convolution. By doing this the output of the network will be 4D instead of flattening to 2D.
+
+## Decoder
+the decoder network which usually is a transpose convolution but for the reason explained above in this exersise bilinear upsampling is to take the feature representation that are extracted using the convolution network and 1x1 convolution as input, process it and make its decision, and produce an output. The two network combined is called an encoder-decoder network.
+
+Note: The same network architecture can be used to follow other objects such as car, dog,... with proper data and retraining the network. The network does not care what kind of object it is segmenting.
 
 over view of network architecture:
 
