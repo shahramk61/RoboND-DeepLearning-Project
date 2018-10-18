@@ -2,10 +2,10 @@
 
 
 [image_0]: ./docs/misc/fcn.png
-[image_1]: ./docs/misc/1.png
-[image_2]: ./docs/misc/2.png
-[image_3]: ./docs/misc/3.png
-[image_4]: ./docs/misc/4.png
+[image_1]: ./docs/misc/img_1.PNG
+[image_2]: ./docs/misc/img_2.PNG
+[image_3]: ./docs/misc/img_3.PNG
+[image_4]: ./docs/misc/img_4.PNG
 
 ## Deep Learning project writeup
 This document is prepared as a report on the deep learning segmentation project.
